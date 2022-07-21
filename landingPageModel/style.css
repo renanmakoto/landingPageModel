@@ -1,0 +1,243 @@
+:root {
+    --globalWhiteColor: #FFFFFF;
+    --menuItensHoverColor: #FFDD33;
+    --contactButtonColor: #0F3FD3;
+    --aboutUsColor: #FBFCFE;
+    --paragraphTagColor: #ccc;
+    --boxShadowColor: #2426721C;
+    --boxSpecialHeader3: #000000;
+    --boxSpecialParagraph: #7E92AC;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.center {
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+section.main {
+    background-image: url(./images/bg-1.svg);
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+}
+
+.menuLogo {
+    width: 50%;
+}
+
+.menuItens {
+    width: 50%;
+    text-align: right;
+}
+
+.menuItens a {
+    font-weight: bold;
+    color: var(--globalWhiteColor);
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menuItens a:hover {
+    border-bottom: 2px solid var(--menuItensHoverColor);
+}
+
+.menuItens a.contactButton {
+    background-color: var(--contactButtonColor);
+    padding: 10px 10px;
+    border-radius: 10px;   
+}
+
+.menuItens a.contactButton:hover {
+    border: 0;
+}
+
+.mock {
+    display: block;
+    width: 100%;
+    color: var(--globalWhiteColor);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.mock h1 {
+    font-size: 50px;
+}
+
+.mock img {
+    max-width: 100%;
+}
+
+section.brands {
+    padding: 100px 0;
+}
+
+section.brands img{
+    width: calc(100% / 5);
+
+}
+
+section.aboutUs {
+    padding: 40px 0;
+    background-color: var(--aboutUsColor);
+
+}
+
+section.aboutUs > .center > h2 {
+    font-size: 64px;
+    text-align: center;
+    width: 100%;
+}
+
+section.aboutUs > .center {
+    max-width: 1280px;
+}
+
+section.aboutUs > .center > p {
+    font-size: 14px;
+    color: var(--paragraphTagColor);
+    text-align: center;
+    width: 100%;
+}
+
+.special {
+    display: flex;
+    margin-top: 50px;
+}
+
+.boxSpecial {
+    box-shadow: 0px 20px 40px var(--boxShadowColor);
+    width: 31%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.boxSpecial h3{
+    font-size: 28px;
+    margin: 20px 0;
+    color: var(--boxSpecialHeader3);
+}
+
+.boxSpecial p {
+    font-size: 13px;
+    color: var(--boxSpecialParagraph);
+    margin-bottom: 20px;
+}
+
+section.callToAction {
+    background-image: url(./images/banner.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+    min-height: 200px;
+    color: var(--globalWhiteColor);
+    text-align: center;
+}
+
+section.callToAction h2,
+section.callToAction h4{
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+section.callToAction h2 {
+    font-size: 40px;
+}
+
+section.callToAction a {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 17px;
+    background: var(--menuItensHoverColor);
+    text-decoration: none;
+    color: var(--contactButtonColor);
+}
+
+section.advantages {
+    padding: 50px 0;
+}
+
+.listAdvantages {
+    width: 40%;
+    margin-top: 30px;
+}
+
+.listAdvantages h1 {
+    color: var(--boxSpecialHeader3);
+    font-size: 40px;
+} 
+
+.listAdvantages p {
+    color: var(--boxSpecialParagraph);
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.listAdvantages span {
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+
+.listAdvantages img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.imageAdvantages {
+    width: 60%;
+}
+
+.imageAdvantages img {
+    max-width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .listAdvantages, .imageAdvantages {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    .special {
+        flex-wrap: wrap;
+    }
+    .boxSpecial{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    section.brands > .center {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.brands img {
+        max-width: 300px;
+        width: 100%;
+    
+    }
+}
