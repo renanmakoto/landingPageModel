@@ -7,7 +7,8 @@
     --boxShadowColor: #2426721C;
     --boxSpecialHeader3: #000000;
     --boxSpecialParagraph: #7E92AC;
-
+    --sliderColor: #d8d8d8;
+    --sliderColorButton: #373855;
 }
 
 * {
@@ -212,6 +213,93 @@ section.advantages {
     max-width: 100%;
 }
 
+.divBtn {
+    text-align: center;
+}
+.middleBtn {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 17px;
+    background: var(--contactButtonColor);
+    text-decoration: none;
+    color: var(--globalWhiteColor);
+    margin-top: 50px;
+}
+
+section.reviews {
+    background-color: var(--aboutUsColor);
+    padding: 40px 0;
+}
+
+section.reviews > h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.sliderContainer {
+    overflow: hidden;
+    max-width: 1200px;
+    padding: 40px 0;
+}
+
+.singleSliderContainer {
+    float: left;
+    background-color: var(--globalWhiteColor);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.singleSliderContainer p {
+    margin: 15px 0;
+    color: var(--boxSpecialParagraph);
+    font-size: 14px;
+}
+
+.slick-slide {
+    margin-left: 27px;
+}
+
+.slick-list {
+    margin-left: -27px;
+}
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	top: 30px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: var(--sliderColor);
+	border-width: 0;
+	background: var(--sliderColor);
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+
+.slick-slide:focus {outline: none;}
 
 @media screen and (max-width: 768px) {
 
