@@ -1,6 +1,6 @@
 :root {
     --globalWhiteColor: #FFFFFF;
-    --menuItensHoverColor: #FFDD33;
+    --menuItemsHoverColor: #FFDD33;
     --contactButtonColor: #0F3FD3;
     --aboutUsColor: #FBFCFE;
     --paragraphTagColor: #ccc;
@@ -9,6 +9,10 @@
     --boxSpecialParagraph: #7E92AC;
     --sliderColor: #d8d8d8;
     --sliderColorButton: #373855;
+    --contactBackgroundColor: #FCFDFF;
+    --contactBorderColor: #C3CCE8;
+    --sendMessageButton: #255AFF;
+    --mobileMenuColor: #282828;
 }
 
 * {
@@ -43,12 +47,12 @@ section.main {
     width: 50%;
 }
 
-.menuItens {
+.menuItems {
     width: 50%;
     text-align: right;
 }
 
-.menuItens a {
+.menuItems a {
     font-weight: bold;
     color: var(--globalWhiteColor);
     text-decoration: none;
@@ -56,17 +60,17 @@ section.main {
     margin: 0 10px;
 }
 
-.menuItens a:hover {
-    border-bottom: 2px solid var(--menuItensHoverColor);
+.menuItems a:hover {
+    border-bottom: 2px solid var(--menuItemsHoverColor);
 }
 
-.menuItens a.contactButton {
+.menuItems a.contactButton {
     background-color: var(--contactButtonColor);
     padding: 10px 10px;
-    border-radius: 10px;   
+    border-radius: 10px;
 }
 
-.menuItens a.contactButton:hover {
+.menuItems a.contactButton:hover {
     border: 0;
 }
 
@@ -90,7 +94,7 @@ section.brands {
     padding: 100px 0;
 }
 
-section.brands img{
+section.brands img {
     width: calc(100% / 5);
 
 }
@@ -101,17 +105,17 @@ section.aboutUs {
 
 }
 
-section.aboutUs > .center > h2 {
+section.aboutUs>.center>h2 {
     font-size: 64px;
     text-align: center;
     width: 100%;
 }
 
-section.aboutUs > .center {
+section.aboutUs>.center {
     max-width: 1280px;
 }
 
-section.aboutUs > .center > p {
+section.aboutUs>.center>p {
     font-size: 14px;
     color: var(--paragraphTagColor);
     text-align: center;
@@ -131,7 +135,7 @@ section.aboutUs > .center > p {
     border-radius: 10px;
 }
 
-.boxSpecial h3{
+.boxSpecial h3 {
     font-size: 28px;
     margin: 20px 0;
     color: var(--boxSpecialHeader3);
@@ -154,7 +158,7 @@ section.callToAction {
 }
 
 section.callToAction h2,
-section.callToAction h4{
+section.callToAction h4 {
     font-weight: normal;
     margin: 10px 0;
 }
@@ -169,7 +173,7 @@ section.callToAction a {
     border-radius: 7px;
     font-weight: bold;
     font-size: 17px;
-    background: var(--menuItensHoverColor);
+    background: var(--menuItemsHoverColor);
     text-decoration: none;
     color: var(--contactButtonColor);
 }
@@ -186,7 +190,7 @@ section.advantages {
 .listAdvantages h1 {
     color: var(--boxSpecialHeader3);
     font-size: 40px;
-} 
+}
 
 .listAdvantages p {
     color: var(--boxSpecialParagraph);
@@ -216,6 +220,7 @@ section.advantages {
 .divBtn {
     text-align: center;
 }
+
 .middleBtn {
     display: inline-block;
     padding: 8px 15px;
@@ -233,7 +238,7 @@ section.reviews {
     padding: 40px 0;
 }
 
-section.reviews > h1 {
+section.reviews>h1 {
     text-align: center;
     font-size: 50px;
 }
@@ -266,44 +271,185 @@ section.reviews > h1 {
     margin-left: -27px;
 }
 
-.slick-dotted ul{
+.slick-dotted ul {
     display: block;
-	list-style-type: none;
-	text-align: center;
-	position: relative;
-	top: 30px;
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    top: 30px;
 }
 
-.slick-dotted li{
-	display: inline-block;
-	margin: 0 7px;
+.slick-dotted li {
+    display: inline-block;
+    margin: 0 7px;
 }
 
-.slick-dotted button:focus{
-	outline: 0;
+.slick-dotted button:focus {
+    outline: 0;
 }
 
-.slick-dotted li button{
-	width: 16px;
-	height: 16px;
-	border-radius: 8px;
-	color: var(--sliderColor);
-	border-width: 0;
-	background: var(--sliderColor);
-	opacity: 1;
-	cursor: pointer;
+.slick-dotted li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: var(--sliderColor);
+    border-width: 0;
+    background: var(--sliderColor);
+    opacity: 1;
+    cursor: pointer;
 }
 
-li.slick-active button{
-	background: #373855;
-	color: #373855;
+li.slick-active button {
+    background: #373855;
+    color: #373855;
 }
 
-.slick-slide:focus {outline: none;}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+
+
+section.contact {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section.contact h1 {
+    font-size: 50px;
+}
+
+section.contact form {
+    width: 100%;
+
+}
+
+
+.contact input[type=text],
+.contact input[type=email] {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: var(--contactBackgroundColor);
+    border: 1px solid var(--contactBorderColor);
+    padding-left: 10px;
+}
+
+.contact textarea {
+    width: 100%;
+    height: 120px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: var(--contactBackgroundColor);
+    border: 1px solid var(--contactBorderColor);
+    padding: 10px;
+    resize: vertical;
+}
+
+.contact input[type=submit] {
+    width: 100%;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    border: 0;
+    background: var(--contactButtonColor);
+    color: var(--globalWhiteColor);
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 10px 0;
+    background: var(--sendMessageButton);
+    color: var(--globalWhiteColor);
+
+}
+
+.footerText {
+    width: 50%;
+    padding: 8px 0;
+}
+
+.menuItemsMobile {
+    width: 50%;
+    text-align: right;
+    display: none;
+}
+
+.menuItemsMobile i {
+    color: var(--globalWhiteColor);
+    position: relative;
+    top: 15px;
+    font-size: 23px;
+    cursor: pointer;
+
+}
 
 @media screen and (max-width: 768px) {
 
-    .listAdvantages, .imageAdvantages {
+    .menuItemsMobile {
+        display: block;
+
+    }
+
+    .mobileMenu {
+
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        left: 0;
+        top: 65px;
+        background-color: var(--globalWhiteColor);
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .show {
+        opacity: 1;
+    }
+
+    .hide {
+        opacity: 0;
+    }
+
+    .mobileMenu a {
+        text-align: center;
+        display: block;
+        margin: 8px 0;
+        color: var(--mobileMenuColor);
+        text-decoration: none;
+        font-weight: bold;
+        border-bottom: 1px solid var(--mobileMenuColor);
+        padding: 8px 0;
+    }
+
+    section.main .menuItems {
+        display: none;
+    }
+
+    footer .menuItems {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .menuItems a {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .footerText {
+        width: 100%;
+        text-align: center;
+        padding: 8px 0;
+
+    }
+
+    .listAdvantages,
+    .imageAdvantages {
         width: 100%;
         margin-bottom: 30px;
     }
@@ -312,12 +458,13 @@ li.slick-active button{
     .special {
         flex-wrap: wrap;
     }
-    .boxSpecial{
+
+    .boxSpecial {
         width: 100%;
         margin-right: 0;
     }
 
-    section.brands > .center {
+    section.brands>.center {
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
@@ -326,6 +473,6 @@ li.slick-active button{
     section.brands img {
         max-width: 300px;
         width: 100%;
-    
+
     }
 }
