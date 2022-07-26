@@ -16,4 +16,3 @@ menuMobileButton.addEventListener('click', () => {
         menuItemsJS.classList.add('show')
     }
 })
-
