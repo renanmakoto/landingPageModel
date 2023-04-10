@@ -1,10 +1,10 @@
-<h1></h1>
+<h1 align="center">Landing Page Model</h1>
 
-<p>A simple landing page I developed for practising my skills.</p>
+<p align="center">A simple landing page I developed for practising my skills.</p>
 
-<p>You may access the application through the link below:</p>
+<p align="center">You may access the application through the link below:</p>
 
-<p>https://renanmakoto.github.io/landingPageModel/</p>
+<p align="center">https://renanmakoto.github.io/landingPageModel/</p>
 
 
 <div align="center">
