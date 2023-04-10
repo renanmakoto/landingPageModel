@@ -18,3 +18,5 @@ TECHNOLOGIES USED:
 <a target="_blank" href="https://jquery.com/"><img src="https://www.interviewbit.com/blog/wp-content/uploads/2021/10/jquery-logo-vertical_large_square.png" /></a>
   
 </div>
+
+<p align="center">With ❤ by <img src=https://img.shields.io/badge/-dotExtension-black /> <p/>
