@@ -102,7 +102,6 @@ section.brands img {
 section.aboutUs {
     padding: 40px 0;
     background-color: var(--aboutUsColor);
-
 }
 
 section.aboutUs>.center>h2 {
