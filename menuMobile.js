@@ -1,9 +1,3 @@
-/*$('.menuItemsMobile i').click(function() {
-    $('.mobileMenu').fadeIn();
-})*/
-//Not in use
-
-
 let menuMobileButton = document.querySelector('.menuItemsMobile i')
 
 menuMobileButton.addEventListener('click', () => {
